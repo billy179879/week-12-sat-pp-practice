@@ -1,17 +1,62 @@
 function findNeighbors(node, matrix) {
+    const arr = [];
+    // let rowNum = matrix.length;
+    // let colNum = matrix[0].length;
+    // let [row, col] = node;
+
+    // if (row > 0) {
+    //     arr.push([row -1, col]);
+    // }
+
+    // if (row < rowNum -1) {
+    //     arr.push([row + 1, col]);
+    // }
+
+    // if (col > 0) {
+    //     arr.push([row, col -1]);
+    // }
+
+    // if (col < colNum - 1) {
+    //     arr.push([row, col +1]);
+    // }
+    if (node[0] - 1 >= 0) {
+        arr.push([node[0] - 1, node[1]])
+  
+    }
+
     // Up
-
+    if (node[0]  < matrix.length -1) {
+        arr.push([node[0] + 1, node[1]])
+  
+    }
     // Down
-
+    if (node[1] > 0) {
+        arr.push([node[0], node[1] - 1])
+    }
     // Left
-
-    // Right
-
+    if ( node[1] < matrix[node[1]].length - 1) {
+        arr.push([node[0], node[1] + 1])
+    }
+    //Right
+return arr;
     // Your code here
 }
 
 
 function bfsPath(matrix, startNode, endValue) {
+    let arr = [];
+    let currNode = startNode;
+    
+
+    if (!matrix[endValue[0]][endValue[1]]) return false;
+
+   
+
+    while (currNode[0] === startNode[0]) {
+        while (currNode)
+    }
+
+   
     // Your code here
 }
 
